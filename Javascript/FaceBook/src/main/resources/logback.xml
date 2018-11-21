@@ -24,7 +24,7 @@
 						<File>${user.home}/Desktop/Works/OrangeBlock/JavaTech/Logs/FaceBook_Log/${byDate}_FaceBook_Log.txt</File>
 					</then>
 					<else>
-						<File>${user.home}/Desktop/Log/FaceBook_Log/${byDate}_FaceBook_Log.txt</File>
+						<File>${user.home}/Desktop/Logs/FaceBook_Log/${byDate}_FaceBook_Log.txt</File>
 					</else>
 				</if>
 			</then>
@@ -48,7 +48,7 @@
 						<File>${user.home}/Desktop/Works/OrangeBlock/JavaTech/Logs/FaceBook_Log/FaceBook_Log.txt</File>
 					</then>
 					<else>
-						<File>${user.home}/Desktop/FaceBook_Log/FaceBook_Log.txt</File>
+						<File>${user.home}/Desktop/Logs/FaceBook_Log/${byDate}_FaceBook_Log.txt</File>
 					</else>
 				</if>
 			</then>
@@ -71,7 +71,7 @@
 							<fileNamePattern>${user.home}/Desktop/Works/OrangeBlock/JavaTech/Logs/FaceBook_Log/zip/http/%d{yyyy-MM-dd}/_%i-Log.txt.zip</fileNamePattern>
 						</then>
 						<else>
-		  					<fileNamePattern>${user.home}/Desktop/FaceBook_Log/zip/http/%d{yyyy-MM-dd}/_%i-Log.txt.zip</fileNamePattern>
+		  					<fileNamePattern>${user.home}/Desktop/Logs/FaceBook_Log/zip/http/%d{yyyy-MM-dd}/_%i-Log.txt.zip</fileNamePattern>
 		  				</else>
 		  			</if>
 		  		</then>
