@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /// facebook 第三方登入按钮初始化
     @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     
     @IBOutlet weak var logTextView: UITextView!
@@ -24,10 +25,11 @@ class ViewController: UIViewController {
 //        loginButton.center = self.view.center
 //        self.view.addSubview(loginButton)
         
-        
+        // 设置获取账户的信息
         fbLoginButton.readPermissions = ["public_profile"]
         fb_getUserInfo()
         
+        // 监听Facebook 账户accesstoken变化
         FBSDKProfile.enableUpdates(onAccessTokenChange: true)
         NotificationCenter.default.addObserver(self, selector: #selector(fb_accessTokenDidChange(_:)), name: .FBSDKAccessTokenDidChange, object: nil)
     }
@@ -39,6 +41,7 @@ class ViewController: UIViewController {
         if let didChange = notification.userInfo?[FBSDKAccessTokenDidChangeUserID] as? Int ,
             didChange == 1 {
             if FBSDKAccessToken.current() != nil {
+                // 当账户发生改变，且账户存在时，获取账户信息
                 fb_getUserInfo()
             }
         }
