@@ -1,240 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Facebook Login</title>
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yR/l/1,cross/tF19CzrrZ0B.css" data-bootloader-hash="0yKpe" data-permanent="1" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/ye/l/1,cross/bGTFo7dYK9o.css" data-bootloader-hash="uSqb0" data-permanent="1" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yB/l/1,cross/oGrpJ-mXYzL.css" data-bootloader-hash="l5HS3" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yl/l/1,cross/kpbclI2_dVj.css" data-bootloader-hash="t/h3H" data-permanent="1" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yR/l/1,cross/yn32m-IzAn-.css" data-bootloader-hash="Lf43W" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yA/l/1,cross/zBmxtT3N49Z.css" data-bootloader-hash="9c4Xr" data-permanent="1" crossorigin="anonymous">
-<script src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/yYC77rFGA8p.js" data-bootloader-hash="a+bru" crossorigin="anonymous"></script>
+    <title>Facebook Login JavaScript Example</title>
+    <meta charset="UTF-8">
 </head>
 <body>
-	<div class="_li" id="u_0_2">
-		<div class="_3_s0 _1toe _3_s1 _3_s1 uiBoxGray noborder" data-testid="ax-navigation-menubar" id="u_0_3">
-			<div class="_608m">
-				<div class="_5aj7 _tb6">
-					<div class="_4bl7">
-						<span class="mrm _3bcv _50f3">Jump to</span>
-					</div>
-					<div class="_4bl9 _3bcp">
-						<div class="_6a _608n" aria-label="Navigation Assistant" aria-keyshortcuts="Alt+/" role="menubar" id="u_0_4">
-							<div class="_6a uiPopover" id="u_0_5">
-								<a role="menuitem" class="_42ft _4jy0 _55pi _2agf _4o_4 _63xb _p _4jy3 _517h _51sy" href="#" style="max-width: 200px;" aria-haspopup="true" aria-expanded="false" rel="toggle" id="u_0_6">
-									<span class="_55pe">Sections of this page</span>
-									<span class="_4o_3 _3-99">
-										<i class="img sp_9jEi5ZEk7ZM sx_6043ae"></i>
-									</span>
-								</a>
-							</div>
-							<div class="_6a _3bcs"></div>
-							<div class="_6a mrm uiPopover" id="u_0_7">
-								<a role="menuitem" class="_42ft _4jy0 _55pi _2agf _4o_4 _3_s2 _63xb _p _4jy3 _4jy1 selected _51sy" href="#" style="max-width: 200px;" aria-haspopup="true" tabindex="-1" aria-expanded="false" rel="toggle" id="u_0_8">
-									<span class="_55pe">Accessibility Help</span>
-									<span class="_4o_3 _3-99">
-										<i class="img sp_9jEi5ZEk7ZM sx_9d3336"></i>
-									</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="_4bl7 mlm pll _3bct">
-						<div class="_6a _3bcy">
-							Press <span class="_3bcz">opt</span> + <span class="_3bcz">/</span>
-							to open this menu
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="pagelet_bluebar" data-referrer="pagelet_bluebar">
-			<div id="blueBarDOMInspector">
-				<div class="_53jh">
-					
-				</div>
-			</div>
-		</div>
-		<div id="globalContainer" class="uiContextualLayerParent">
-			<div class="fb_content clearfix " id="content" role="main">
-				<div class="_4-u5 _30ny">
-					<span class="muffin_tracking_pixel_start"></span><img
-						class="tracking_pixel"><span
-						class="muffin_tracking_pixel_end"></span>
-					<div class="_2pio _1uxu">
-						<div class="_585n" id="u_0_9">
-							<i class="_585p img sp_9jEi5ZEk7ZM sx_41eb2e"><u>Notice</u></i>
-							<div class="_585r _50f4">You must log in to continue.</div>
-						</div>
-					</div>
-					<div class="_4-u2 _1w1t _4-u8 _52jv">
-						<div class="_xku" id="header_block">
-							<span class="_50f6">Log Into Facebook</span>
-						</div>
-						<div class="login_form_container">
-							<form id="login_form" action="https://www.facebook.com/v3.2/dialog/oauth?client_id=183924629181881&redirect_uri=https://sit.bcaas.io/&state=connected" method="post" onsubmit="">
-								<input type="hidden" name="lsd" value="AVqxPwup" autocomplete="off">
-								<div class="pam uiBoxYellow">You must log in to continue.</div>
-								<input type="hidden" autocomplete="off" id="error_box">
-								<div id="loginform">
-									<input type="hidden" autocomplete="off" id="display" name="display" value="">
-									<input type="hidden" autocomplete="off" id="enable_profile_selector" name="enable_profile_selector" value="">
-									<input type="hidden" autocomplete="off" id="isprivate" name="isprivate" value="">
-									<input type="hidden" autocomplete="off" id="legacy_return" name="legacy_return" value="0">
-									<input type="hidden" autocomplete="off" id="profile_selector_ids" name="profile_selector_ids" value="">
-									<input type="hidden" autocomplete="off" id="return_session" name="return_session" value="">
-									<input type="hidden" autocomplete="off" id="skip_api_login" name="skip_api_login" value="">
-									<input type="hidden" autocomplete="off" id="signed_next" name="signed_next" value="">
-									<input type="hidden" autocomplete="off" id="trynum" name="trynum" value="1">
-									<input type="hidden" autocomplete="off" name="timezone" value="-480" id="u_0_a">
-									<input type="hidden" autocomplete="off" name="lgndim" value="eyJ3IjoxOTIwLCJoIjoxMDgwLCJhdyI6MTkyMCwiYWgiOjEwODAsImMiOjI0fQ==" id="u_0_b">
-									<input type="hidden" name="lgnrnd" value="180802_H3rP">
-									<input type="hidden" id="lgnjs" name="lgnjs" value="1541642883">
-									<div class="clearfix _5466 _44mg" id="email_container">
-										<input type="text" class="inputtext _55r1 inputtext _1kbt inputtext _1kbt" name="email" id="email" tabindex="0" placeholder="Email or Phone Number" value="deploy@orangeblock.tech" autofocus="1" aria-label="Email or Phone Number">
-									</div>
-									<div class="clearfix _5466 _44mg">
-										<input type="password" class="inputtext _55r1 inputtext _1kbt inputtext _1kbt" name="pass" id="pass" tabindex="0" placeholder="Password" aria-label="Password" value="@Obt2018">
-									</div>
-									<div class="_xkt">
-										<button value="1" class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy" id="loginbutton" name="login" tabindex="0" type="submit">Log In</button>
-									</div>
-									<div id="login_link">
-										<div class="_1rf5">
-											<span class="_1rf8">or</span>
-										</div>
-										<div class="_xkt">
-											<a role="button" class="_42ft _4jy0 _4jy6 _4jy2 selected _51sy" href="/r.php?next=https%3A%2F%2Fdevelopers.facebook.com%2F&amp;locale=en_US&amp;display=page" style="font-size: 14px">Create New Account</a>
-										</div>
-										<div class="_xkt">
-											<a href="https://www.facebook.com/recover/initiate/?ars=facebook_login" id="forgot-password-link" target="">Forgot account?</a>
-										</div>
-									</div>
-								</div>
-								<input type="hidden" autocomplete="off" id="prefill_contact_point" name="prefill_contact_point" value="">
-								<input type="hidden" autocomplete="off" id="prefill_source" name="prefill_source">
-								<input type="hidden" autocomplete="off" id="prefill_type" name="prefill_type">
-								<input type="hidden" autocomplete="off" id="first_prefill_source" name="first_prefill_source">
-								<input type="hidden" autocomplete="off" id="first_prefill_type" name="first_prefill_type">
-								<input type="hidden" autocomplete="off" id="had_cp_prefilled" name="had_cp_prefilled" value="false">
-								<input type="hidden" autocomplete="off" id="had_password_prefilled" name="had_password_prefilled" value="false">
-								<input type="hidden" autocomplete="off" name="ab_test_data" value="">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		<span><img src="https://facebook.com/security/hsts-pixel.gif"
-			width="0" height="0" style="display: none"></span>
-	</div>
-	
 <script>
-    function init() {
-        FB.api(
-          '/l214.animaux',
-          {"fields":"fan_count"},
-          function(response) {
-            //alert(response.fan_count);
-          }
-        );
+    // This is called with the results from from FB.getLoginStatus().
+    function statusChangeCallback(response) {
+        console.log('statusChangeCallback');
+        document.getElementById('statusChangeCallback').innerHTML = JSON.stringify(response).replace(",", "<br>");
+        ;
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+            // Logged into your app and Facebook.
+            testAPI();
+        } else {
+            // The person is not logged into your app or we are unable to tell.
+            document.getElementById('status').innerHTML = 'Please log ' +
+                'into this app.';
+        }
     }
 
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '183924629181881',
-        xfbml      : true,
-        version    : 'v2.8'
-      });
+    // This function is called when someone finishes with the Login
+    // Button.  See the onlogin handler attached to it in the sample
+    // code below.
+    function checkLoginState() {
+        FB.getLoginStatus(function (response) {
+            console.log('checkLoginState');
+            document.getElementById('checkLoginState').innerHTML = JSON.stringify(response);
+            statusChangeCallback(response);
+        });
+    }
 
-      init();
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '183924629181881',
+            cookie: true,  // enable cookies to allow the server to access
+                           // the session
+            xfbml: true,  // parse social plugins on this page
+            version: 'v2.8' // use graph api version 2.8
+        });
+
+        // Now that we've initialized the JavaScript SDK, we call
+        // FB.getLoginStatus().  This function gets the state of the
+        // person visiting this page and can return one of three states to
+        // the callback you provide.  They can be:
+        //
+        // 1. Logged into your app ('connected')
+        // 2. Logged into Facebook, but not your app ('not_authorized')
+        // 3. Not logged into Facebook and can't tell if they are logged into
+        //    your app or not.
+        //
+        // These three cases are handled in the callback function.
+
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+
     };
 
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "/FaceBook/resources/js/facebook/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-</script>
-<script>
-  // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else {
-      // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
+
+    // Here we run a very simple test of the Graph API after login is
+    // successful.  See statusChangeCallback() for when this call is made.
+    function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function (response) {
+            console.log('testAPI');
+            document.getElementById('testAPI').innerHTML = JSON.stringify(response);
+            console.log(response);
+            console.log('Successful login for: ' + response.name);
+            document.getElementById('status').innerHTML =
+                'Thanks for logging in, ' + response.name + '!';
+            window.location.href = "/FaceBook/resources/html/logout.html";
+        });
     }
-  }
-
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '183924629181881',
-      cookie     : true,  // enable cookies to allow the server to access 
-                          // the session
-      xfbml      : true,  // parse social plugins on this page
-      version    : 'v2.8' // use graph api version 2.8
-    });
-
-    // Now that we've initialized the JavaScript SDK, we call 
-    // FB.getLoginStatus().  This function gets the state of the
-    // person visiting this page and can return one of three states to
-    // the callback you provide.  They can be:
-    //
-    // 1. Logged into your app ('connected')
-    // 2. Logged into Facebook, but not your app ('not_authorized')
-    // 3. Not logged into Facebook and can't tell if they are logged into
-    //    your app or not.
-    //
-    // These three cases are handled in the callback function.
-
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-
-  };
-
-  // Load the SDK asynchronously
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-    });
-  }
 </script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
+
+<div id="statusChangeCallback">
+</div>
+
+<div id="testAPI">
+</div>
+
+<div id="checkLoginState">
+</div>
 
 </body>
 </html>
