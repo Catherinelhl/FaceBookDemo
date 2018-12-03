@@ -85,9 +85,19 @@
             console.log('Successful login for: ' + response.name);
             document.getElementById('status').innerHTML =
                 'Thanks for logging in, ' + response.name + '!';
-            window.location.href = "/FaceBook/resources/html/logout.html";
+            confirmExit();
+
         });
     }
+
+    function confirmExit() {
+        var r = confirm("是否跳转至登出页面");//window.confirm("Press a button");
+        if (r == true) {
+            window.location.href = "/FaceBook/resources/html/logout.html";
+        }
+    }
+
+
 </script>
 
 <!--
